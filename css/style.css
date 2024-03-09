@@ -1,0 +1,443 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    padding: 0;
+    max-width: 100%;
+    font-family: "PT Sans", sans-serif;
+}
+a,form,ul,li,input,h1,h2,h3,p,img{
+    margin: 0;
+    padding: 0;
+}
+li{
+    list-style-type: none;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+.container{
+    max-width: 1170px;
+    margin: 0 auto;
+}
+.header{
+    background-color: black;
+    padding-top: 34px;
+    padding-bottom: 34px;
+}
+.top-menu{
+    display: flex;
+    justify-content: space-between;
+}
+.top-menu-logo{
+    font-family: Lato;
+    font-size: 14px;
+    color: white;
+    font-weight: 400;
+}
+.top-menu-car{
+    margin-left: 5px;
+    text-transform: uppercase;
+    background-color: #4A90E2;
+    padding: 3px 5px 3px 5px;
+    border-radius: 5px;
+}
+.menu-items{
+    display: flex;
+    gap: 30px;
+}
+.menu-href{
+    font-family: PT Sans;
+    font-size: 14px;
+    color: white;
+    padding-left: 2px;
+    padding-right: 2px;
+}
+.menu-href:hover{
+    background-color: white;
+    color: black;
+    border-radius: 2px;
+}
+.top-menu-serch{
+    background-color: black;
+    border: none;
+}
+.first-page{
+    padding-top: 30px;
+}
+.first-page-items{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 30px;
+}
+.first-page-item{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-top: 30px;
+    padding-bottom: 23px;
+    padding-left: 20px;
+    border-radius: 5px;
+}
+.first-page-item:first-child{
+    height: 560px;
+    grid-row: 1/3;
+    background-image: url("../img/Bitmap1.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.vehicle{
+    font-family: PT Sans;
+    font-size: 12px;
+    width: 62px;
+    height: 22px;
+    color: white;
+    background-color: #4A90E2;
+    text-align: center;
+    padding: 4px 12px;
+    border-radius: 2px;
+}
+.main-page-item__author{
+    font-family: PT Sans;
+    font-size: 14px;
+    color: white;
+}
+.main-page-item__title{
+    font-family: PT Sans;
+    font-size: 26px;
+    color: white;
+}
+.first-page-item:nth-child(2){
+    background-image: url("../img/Image_2.jpg");
+}
+.first-page-item:nth-child(3){
+    background-image: url("../img/Bitmap.jpg");
+}
+.first-page-item:nth-child(4){
+    background-image: url("../img/Bitmap2.jpg");
+}
+.first-page-item:nth-child(5){
+    background-image: url("../img/Image_5.jpg");
+}
+.blog{
+    padding-top: 80px;
+}
+.blog-box{
+    display: flex;
+    gap: 130px;
+}
+.main-blog{
+    display: flex;
+    flex-direction: column;
+    gap: 180px;
+    margin-bottom: 200px;
+}
+.main-blog-item{
+    position: relative;
+}
+.main-blog-box{
+    width: 730px;
+    height: 250px;
+    background-color: white;
+    box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
+    position: absolute;
+    top: 315px; 
+    left: 20px;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.main-blog-box-title{
+    font-family: PT Sans;
+    font-size: 25px;
+}
+.main-blog-box-author{
+    font-family: PT Sans;
+    font-size: 14px;
+    font-style: italic; 
+    color: #666666;
+}
+.main-blog-box-text{
+    font-family: PT Sans sans-serif;
+    font-size: 14px;
+    line-height: 24px;
+    color: #666666;
+}
+.main-article{
+    margin-bottom: 60px;
+}
+.main-article-img{
+    border-radius: 2px;
+    margin-bottom: 15px;
+}
+.main-article-author{
+    font-family: PT Sans;
+    font-weight: 700;
+    font-size: 18px;
+    color: #171717;
+    margin-bottom: 10px;
+}
+.main-article-info{
+    font-family: PT Sans;
+    font-size: 14px;
+    font-style: italic;
+    color: #999999;
+    margin-bottom: 15px;
+}
+.main-article-text{
+    font-family: PT Sans;
+    font-size: 15px;
+    line-height: 25px;
+    color: #666666;
+    margin-bottom: 20px;
+}
+.sidebar-button{
+    background-color: #232323;
+    color: white;
+    font-family: PT Sans;
+    font-size: 14px;
+    border: none;
+    width: 270px;
+    height: 50px;
+    border-radius: 2px;
+}
+.sidebar-title{
+    font-family: PT Sans;
+    font-size: 18px;
+    color:#171717;
+    margin-bottom: 25px;
+}
+.sidebar-news{
+    position: relative;
+    margin-bottom: 40px;
+}
+.sidebar-news-img{
+    border-radius: 2px;
+    margin-bottom: 20px;
+}
+.sidebar-vehicle{
+    position: absolute;
+    top: 24px;
+    left: 20px;
+}
+.sidebar-news-title{
+    font-family: PT Sans;
+    font-size: 20px;
+    color: #171717;
+    margin-bottom: 10px;
+}
+.sidebar-news-author{
+    font-family: PT Sans;
+    font-size: 14px;
+    font-style: italic;
+    color: #666666;
+}
+.sidebar-gallery{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    margin-bottom: 10px;
+}
+.insta{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 60px;
+}
+.tags{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 60px;
+}
+.tags-item{
+    font-family: PT Sans;
+    font-size: 14px;
+    color: #171717;
+    background-color: #EBEBEB;
+    padding: 5px 16px;
+    border-radius: 2px;
+}
+.email-info{
+    font-family: PT Sans;
+    font-size: 14px;
+    color: #666666;
+    margin-bottom: 25px;
+}
+.email-form{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.email-name, .email-mail{
+    width: 270px;
+    height: 50px;
+    padding-left: 15px;
+    color: #AEB3BB;
+    border: 1px solid #AEB3BB;
+    border-radius: 2px;
+}
+.paginator{
+    display: flex;
+    gap: 10px;
+}
+.paginator-item{
+    width: 40px;
+    height: 40px;
+    background-color: white;
+    border:1px solid #E5E5E5;
+    font-family: PT Sans;
+    font-size: 16px;
+    color: #171717;
+}
+.paginator-item:active{
+    background-color: #171717;
+    color: white;
+}
+.popular{
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+.popular-news-title{
+    margin-bottom: 25px;
+    font-family: PT Sans;
+    font-size: 30px;
+    color:#171717;
+}
+.popular-news{
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+}
+.popular-news-item{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.position-bmw{
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    text-transform: uppercase;
+}
+.popular-news-item-img{
+    border-radius: 2px;
+}
+.popular-news-item-title{
+    font-family: PT Sans;
+    font-size: 20px;
+    color: #171717;
+}
+.popular-news-item-author{
+    font-family: PT Sans;
+    font-size: 14px;
+    font-style: italic;
+    color: #666666;
+}
+.footer{
+    width: 100%;
+}
+.top-footer{
+    background-color: #171717;
+    padding-top: 60px;
+}
+.footer-container{
+    display: flex;
+    justify-content: space-between;
+    gap:120px;
+}
+.social{
+    display: flex;
+    flex-direction: column;
+}
+.social-text{
+    font-family: PT Sans;
+    font-size: 14px;
+    color: #CECECE;
+    margin-bottom: 60px;
+    margin-top: 25px;
+}
+.social-title{
+    font-family: PT Sans;
+    font-size: 20px;
+    color: white;
+    margin-bottom: 25px;
+}
+.social-icones{
+    display: flex;
+    gap: 15px;
+}
+.recent-posts-title{
+    font-family: PT Sans;
+    font-size: 20px;
+    color: white;
+    margin-bottom: 25px;
+}
+.recent-posts-item{
+    display: grid;
+    grid-template-columns: 0.5fr 1fr;
+    margin-bottom: 25px;
+    column-gap: 15px;
+}
+.recent-posts-item-img{
+    grid-row: 1/3;
+    border-radius: 2px;
+}
+.recent-posts-item-title{
+    font-family: PT Sans;
+    font-size: 15px;
+    color: white;
+}
+.recent-posts-item-author{
+    font-family: PT Sans;
+    font-size: 14px;
+    font-style: italic;
+    color: #CECECE;
+}
+.newsletter-title{
+    font-family: PT Sans;
+    font-size: 20px;
+    color: white;
+    margin-bottom: 55px;
+}
+.newsletter-form{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.newsletter-name,.newsletter-mail,.newsletter-button{
+    width: 270px;
+    height: 50px;
+    background-color: #373737;
+    color: #AEB3BB;
+    border: none;
+    border-radius: 2px;
+    padding-left: 15px;
+}
+.newsletter-button{
+    color: white;
+    font-family: PT Sans;
+    font-size: 14px;
+    background-color: #232323;
+}
+.bottom-footer{
+    width: 100%;
+    background-color: black;
+    padding-top: 35px;
+    padding-bottom: 35px;
+}
+.bottom{
+    display: flex;
+    justify-content: space-between;
+}
+.bottom-footer-text{
+    font-family: PT Sans;
+    font-size: 14px;
+    color: white;
+}
